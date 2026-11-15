@@ -1,0 +1,366 @@
+
+.team-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f8fafc;
+  color: #172033;
+}
+
+.team-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.team-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+.team-back:hover {
+  color: #4f46e5;
+}
+
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.team-header p {
+  color: #6366f1;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 9px;
+}
+
+.team-header h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.team-header span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.team-refresh {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 17px;
+  background: white;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.team-refresh:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.team-summary {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 23px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  width: fit-content;
+  min-width: 230px;
+  margin-bottom: 28px;
+}
+
+.team-summary-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.team-summary h3 {
+  font-size: 25px;
+  margin: 0 0 4px;
+}
+
+.team-summary p {
+  color: #64748b;
+  font-size: 13px;
+  margin: 0;
+}
+
+.team-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.team-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 25px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.team-card-heading h2 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.team-card-heading span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.team-list {
+  padding: 5px 25px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 19px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.team-member:last-child {
+  border-bottom: none;
+}
+
+.team-avatar {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #eef2ff;
+  color: #4f46e5;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.team-member-info {
+  flex: 1;
+}
+
+.team-member-info h3 {
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+
+.team-member-info p {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.team-role {
+  padding: 6px 11px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.team-role.owner {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.team-role.admin {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.team-role.staff {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.team-empty {
+  text-align: center;
+  padding: 45px 20px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.team-error {
+  padding: 13px 16px;
+  background: #fef2f2;
+  color: #b91c1c;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .team-page {
+    padding: 22px 15px;
+  }
+
+  .team-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .team-header h1 {
+    font-size: 25px;
+  }
+
+  .team-summary {
+    width: 100%;
+  }
+
+  .team-card-heading {
+    padding: 18px;
+  }
+
+  .team-list {
+    padding: 5px 18px;
+  }
+}
+
+/* Invite Staff Card */
+.team-invite-card {
+  margin-bottom: 24px;
+}
+
+.team-invite-card .team-card-heading h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-invite-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 18px;
+  align-items: end;
+  margin-top: 22px;
+}
+
+.team-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.team-form-group label {
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.team-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  min-height: 46px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  color: #94a3b8;
+  transition: border-color 0.2s ease;
+}
+
+.team-input-wrapper:focus-within {
+  border-color: #6366f1;
+}
+
+.team-input-wrapper input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.team-input-wrapper input::placeholder {
+  color: #94a3b8;
+}
+
+.team-invite-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  min-height: 46px;
+  padding: 0 19px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.team-invite-btn:hover {
+  background: #4338ca;
+}
+
+.team-invite-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.team-success {
+  padding: 13px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  background: #f0fdf4;
+  color: #15803d;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .team-invite-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team-invite-btn {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 550px) {
+  .team-invite-form {
+    grid-template-columns: 1fr;
+  }
+
+  .team-invite-btn {
+    grid-column: auto;
+    width: 100%;
+  }
+}

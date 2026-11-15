@@ -1,0 +1,369 @@
+
+.documents-page {
+  padding: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #172033;
+}
+
+.documents-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.documents-header h1 {
+  font-size: 28px;
+  font-weight: 750;
+  margin: 0 0 8px;
+  letter-spacing: -0.7px;
+}
+
+.documents-header p {
+  color: #7b8496;
+  margin: 0;
+  font-size: 14px;
+}
+
+.documents-upload-card {
+  background: #fff;
+  border: 1px solid #e8ebf1;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 18px rgba(20, 35, 65, 0.035);
+  margin-bottom: 35px;
+}
+
+.documents-section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 22px;
+}
+
+.documents-section-title svg {
+  color: #536dfe;
+}
+
+.documents-upload-form {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr auto;
+  gap: 15px;
+  align-items: end;
+}
+
+.documents-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.documents-field label {
+  font-size: 13px;
+  font-weight: 650;
+  color: #475166;
+}
+
+.documents-field select,
+.documents-field input {
+  width: 100%;
+  min-width: 0;
+  height: 46px;
+  border: 1px solid #dfe4ec;
+  border-radius: 9px;
+  padding: 0 13px;
+  background: #fff;
+  color: #263248;
+  font-size: 13px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.documents-field input[type="file"] {
+  padding: 10px;
+}
+
+.documents-field select:focus,
+.documents-field input:focus {
+  border-color: #6678f7;
+  box-shadow: 0 0 0 3px rgba(102, 120, 247, 0.1);
+}
+
+.documents-upload-btn {
+  height: 46px;
+  padding: 0 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: none;
+  border-radius: 9px;
+  background: #536dfe;
+  color: white;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.documents-upload-btn:hover {
+  background: #4058e8;
+  transform: translateY(-1px);
+}
+
+.documents-upload-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.documents-alert {
+  padding: 12px 15px;
+  border-radius: 9px;
+  margin-bottom: 18px;
+  font-size: 13px;
+}
+
+.documents-error {
+  background: #fff0f0;
+  color: #c03939;
+  border: 1px solid #ffdada;
+}
+
+.documents-success {
+  background: #edfbf3;
+  color: #16834b;
+  border: 1px solid #c9f0d9;
+}
+
+.documents-list-section {
+  margin-top: 30px;
+}
+
+.documents-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.documents-list-header h2 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 750;
+}
+
+.documents-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 330px;
+  height: 43px;
+  border: 1px solid #e1e5ed;
+  border-radius: 9px;
+  padding: 0 13px;
+  background: white;
+  color: #8992a3;
+}
+
+.documents-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  background: transparent;
+  color: #263248;
+}
+
+.documents-search:focus-within {
+  border-color: #6678f7;
+}
+
+.documents-list {
+  display: grid;
+  gap: 12px;
+}
+
+.document-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  border: 1px solid #e9ecf2;
+  border-radius: 13px;
+  padding: 17px 19px;
+  transition: 0.2s;
+}
+
+.document-card:hover {
+  border-color: #d5dcff;
+  box-shadow: 0 5px 16px rgba(30, 50, 90, 0.05);
+}
+
+.document-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.document-icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #f0f2ff;
+  color: #536dfe;
+}
+
+.document-details {
+  min-width: 0;
+}
+
+.document-details strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 650;
+  color: #202b40;
+  overflow-wrap: anywhere;
+}
+
+.document-details p {
+  margin: 5px 0;
+  color: #647087;
+  font-size: 12px;
+}
+
+.document-details small {
+  color: #929bad;
+  font-size: 11px;
+}
+
+.document-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.document-action-btn {
+  width: 37px;
+  height: 37px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e5e8ef;
+  border-radius: 9px;
+  background: white;
+  color: #667085;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.document-download-btn:hover {
+  background: #eff2ff;
+  color: #536dfe;
+  border-color: #d9deff;
+}
+
+.document-delete-btn:hover {
+  background: #fff0f0;
+  color: #e04444;
+  border-color: #ffdada;
+}
+
+.documents-empty {
+  text-align: center;
+  padding: 55px 20px;
+  border: 1px dashed #dce1eb;
+  border-radius: 14px;
+  background: white;
+  color: #8b95a7;
+}
+
+.documents-empty svg {
+  color: #aab3c5;
+  margin-bottom: 10px;
+}
+
+.documents-empty h3 {
+  color: #354158;
+  font-size: 16px;
+  margin: 0 0 7px;
+}
+
+.documents-empty p {
+  font-size: 13px;
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .documents-upload-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .documents-upload-btn {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .documents-page {
+    padding: 20px 14px;
+  }
+
+  .documents-header h1 {
+    font-size: 23px;
+  }
+
+  .documents-upload-card {
+    padding: 18px;
+  }
+
+  .documents-upload-form {
+    grid-template-columns: 1fr;
+  }
+
+  .documents-upload-btn {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .documents-list-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .documents-search {
+    width: 100%;
+  }
+
+  .document-card {
+    align-items: flex-start;
+    padding: 14px;
+  }
+}
+.documents-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 0;
+  margin-bottom: 22px;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.documents-back-btn:hover {
+  color: #4f46e5;
+}
